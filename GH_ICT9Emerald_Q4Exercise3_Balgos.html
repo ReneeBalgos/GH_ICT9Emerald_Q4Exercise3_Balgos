@@ -1,0 +1,36 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Length Calculator</title>
+</head>
+<body>
+	<center><h1>Length Converter</h1></center>
+<h3>Cm to Feet</h3>
+	<p>Centimeters: <input type="text" id="value1" placeholder="Centimeters"></p>
+	<input type="submit" value="x" onclick="forDivision()">
+	<p> Feet: <span id="id1"><input type="text" id="id1" placeholder="Feet"></span></p>
+<br><br><hr>
+<h3>Feet to Cm</h3>
+	<p>Feet:<input type="text" id="value2" placeholder="Feet"></p>
+	<input type="submit" value="x" onclick="forMultiplication()">
+	<p> Centimeters: <span id="id2"><input type="text" id="id2" placeholder="Centimeters"></span></p>
+	
+	<script>
+
+	function forDivision(){
+		var num1 = document.getElementById('value1').value;
+		var num2 = 30.48; 
+		var prod = num1 / num2;
+		document.getElementById('id1').innerHTML = prod;
+		}
+
+	function forMultiplication(){
+		var num1 = document.getElementById('value2').value;
+		var num2 = 30.48; 
+		var prod = num1 * num2;
+		document.getElementById('id2').innerHTML = prod;
+		}
+	</script>
+</body>
+</html>
